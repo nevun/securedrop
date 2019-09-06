@@ -92,6 +92,15 @@ which ideally will synchronize to their smartphone. See the Freedom of the Press
 Foundation guide for `choosing a password manager <https://freedom.press/training/blog/choosing-password-manager/>`__
 if you are not currently using one.
 
+.. tip::
+
+   The user will have to enter this passphrase repeatedly. For this reason, we
+   recommend using `diceware <https://en.wikipedia.org/wiki/Diceware>`__ instead
+   of random character sequences that are difficult to type. If your password
+   manager does not support generating diceware passphrases, see the
+   `EFF guide <https://ssd.eff.org/en/module/creating-strong-passwords#1>`__
+   for information on how to do it yourself.
+
 Create USB *Transfer Device*
 ----------------------------
 
@@ -160,7 +169,7 @@ sure to label it.
 
 Create a USB *Export Device*
 ----------------------------
-We recommend using a fully encrypted USB drive for coping files off the
+We recommend using a fully encrypted USB drive for copying files off the
 *Secure Viewing Station*. This is even more important than for the
 *Transfer Device*, as the risk of accidentally leaving decrypted files on the
 *Export Device* is significant.
@@ -178,16 +187,22 @@ VeraCrypt is a good alternative to hardware-based encryption. It is actively
 maintained cross-platform software that has been independently audited and is
 free to use.
 
-VeraCrypt-encrypted media can be opened in the Tails operating system without
-installing additional software. However, to *create* your encrypted VeraCrypt
-drive in the first place, you will need to install the VeraCrypt software.
-The `guide by Freedom of the Press Foundation <https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/>`__
+VeraCrypt-encrypted media can be opened in the Tails operating system and on
+common Linux distributions without installing additional software. To open
+VeraCrypt media on Windows or Mac workstations, or to create VeraCrypt drives,
+you need to install the VeraCrypt software. The `guide by Freedom of the Press
+Foundation <https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/>`__
 provides instructions for encrypting storage media using VeraCrypt.
 
-While you can install the VeraCrypt software on an everyday workstation running
-Windows, macOS or Linux, larger organizations may want to consider setting up a
-more controlled environment for doing so, and having IT act as a provisioning
-service for encrypted drives.
+Keep in mind that each journalist using a Windows or Mac workstation will need
+to have the VeraCrypt software installed on their computer to access the encrypted
+*Export Device*.
+
+.. tip::
+
+   Larger organizations may want to consider setting up a controlled environment
+   for creating VeraCrypt-encrypted *Export Devices* and providing them to
+   journalists, to ensure that each drive is provisioned in a secure manner.
 
 As with the *Transfer Device*, we recommend storing the passphrase in the
 password manager of each user who will use a given *Export Device*.

@@ -594,6 +594,14 @@ Copy the file or files you want to access on your everyday workstation to the
 Decrypting and Preparing to Publish
 -----------------------------------
 
+.. note::
+
+   To decrypt a VeraCrypt drive on a Windows or Mac workstation, you need
+   to have the VeraCrypt software installed. If you are unsure if you have the
+   software installed or how to use it, ask your administrator, or see
+   the `Freedom of the Press Foundation guide <https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/>`__
+   for working with VeraCrypt.
+
 To access the *Export Device* on your everyday workstation, follow these steps:
 
 1. If your *Export Device* has a physical write protection switch, make sure it
@@ -606,9 +614,6 @@ To access the *Export Device* on your everyday workstation, follow these steps:
    own personal password manager.
 7. Open the *Export Device* in your operating system's file manager, and copy
    the contents of interest to your everyday workstation.
-
-For more information about working with VeraCrypt, see the
-`Freedom of the Press Foundation guide <https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/>`__.
 
 As a security precaution, we recommend deleting the files on the *Export Device*
 after each copy operation. If you are using write protection, you have to perform
