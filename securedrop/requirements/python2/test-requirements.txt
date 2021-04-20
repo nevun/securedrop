@@ -4,40 +4,95 @@
 #
 #    pip-compile --output-file=requirements/python2/test-requirements.txt requirements/python2/test-requirements.in
 #
-attrs==17.4.0             # via hypothesis, pytest
+attrs==17.4.0
+    # via
+    #   hypothesis
+    #   pytest
 beautifulsoup4==4.6.0
+    # via -r test-requirements.in
 blinker==1.4
-certifi==2018.11.29       # via requests
-chardet==3.0.4            # via requests
-click==6.7                # via flask, pip-tools
-coverage==4.4.2           # via pytest-cov
-easyprocess==0.2.3        # via pyvirtualdisplay
-enum34==1.1.6             # via hypothesis
+    # via -r test-requirements.in
+certifi==2018.11.29
+    # via requests
+chardet==3.0.4
+    # via requests
+click==6.7
+    # via
+    #   flask
+    #   pip-tools
+coverage==4.4.2
+    # via pytest-cov
+easyprocess==0.2.3
+    # via pyvirtualdisplay
+enum34==1.1.6
+    # via hypothesis
 flaky==3.6.0
+    # via -r test-requirements.in
 flask-testing==0.7.1
-flask==1.0.2              # via flask-testing
-funcsigs==1.0.2           # via mock, pytest
+    # via -r test-requirements.in
+flask==1.0.2
+    # via flask-testing
+funcsigs==1.0.2
+    # via
+    #   mock
+    #   pytest
 hypothesis==4.22.2
-idna==2.8                 # via requests
-itsdangerous==0.24        # via flask
-jinja2==2.10.1            # via flask
-markupsafe==1.0           # via jinja2
+    # via -r test-requirements.in
+idna==2.8
+    # via requests
+itsdangerous==0.24
+    # via flask
+jinja2==2.10.1
+    # via flask
+markupsafe==1.0
+    # via jinja2
 mock==2.0.0
-pbr==3.1.1                # via mock
+    # via
+    #   -r test-requirements.in
+    #   pytest-mock
+pbr==3.1.1
+    # via mock
 pip-tools==4.0.0
-pluggy==0.6.0             # via pytest
-py==1.5.2
-pysocks==1.6.8            # via requests
+    # via -r test-requirements.in
+pluggy==0.6.0
+    # via pytest
+py==1.10.0
+    # via
+    #   -r test-requirements.in
+    #   pytest
+pysocks==1.6.8
+    # via requests
 pytest-cov==2.5.1
+    # via -r test-requirements.in
 pytest-mock==1.7.1
+    # via -r test-requirements.in
 pytest==3.3.2
+    # via
+    #   -r test-requirements.in
+    #   pytest-cov
+    #   pytest-mock
 pyvirtualdisplay==0.2.1
+    # via -r test-requirements.in
 requests[socks]==2.22.0
+    # via -r test-requirements.in
 selenium==3.141.0
-six==1.11.0               # via mock, pip-tools, pytest
+    # via
+    #   -r test-requirements.in
+    #   tbselenium
+six==1.11.0
+    # via
+    #   mock
+    #   pip-tools
+    #   pytest
 tbselenium==0.4.2
+    # via -r test-requirements.in
 urllib3==1.25.3
-werkzeug==0.14.1          # via flask
+    # via
+    #   -r test-requirements.in
+    #   requests
+    #   selenium
+werkzeug==0.14.1
+    # via flask
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.2.0        # via pytest
+# setuptools
